@@ -1,0 +1,134 @@
+/* Importación de las fuentes Roboto con los pesos especificados */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+/* Establecimiento de variables de colores para un fácil mantenimiento */
+:root {
+    --text-dark: #212529;
+    --text-light: #707070;
+    --light: #F8F9FA;
+    --white: #fff;
+    --success: #28a745;
+}
+
+/* Aplicación de la tipografía a todo el documento */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-dark);
+}
+
+/* Estilos personalizados para el navbar */
+.bg-custom { background-color: #28A745 !important; }
+.navbar-light .navbar-nav .nav-link {
+    color: #fff; /* Texto blanco para una mejor visibilidad en el fondo oscuro */
+}
+.navbar-light .navbar-brand {
+    color: #fff;
+}
+
+.container {
+    margin-top: 20px; /* Añade un margen superior de 20px */
+}
+
+/* Estilo para las tarjetas dentro de la grilla */
+.card {
+    margin-bottom: 20px; /* Añade un margen inferior para separar verticalmente */
+    /* margin-right: 10px; Añade un margen a la derecha para separar horizontalmente */
+}
+
+/* Asegura que la última tarjeta de cada fila no tenga margen a la derecha */
+.col-md-4:last-child .card {
+    margin-right: 0;
+}
+
+/* Asegura que la última tarjeta en general no tenga margen inferior si es necesario */
+.col-md-4:last-of-type .card {
+    margin-bottom: 0;
+}
+
+/* Estilo para el precio actual en oferta */
+.price strong {
+    color: #28A745; /* Verde de Bootstrap success color */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo para el porcentaje de descuento */
+.discount span {
+    background-color: #007BFF; /* Azul de Bootstrap primary color */
+    color: white;
+    padding: 2px 5px; /* Pequeño relleno alrededor del texto */
+    border-radius: 3px; /* Bordes redondeados para el cuadro */
+    font-size: 0.8rem; /* Tamaño más pequeño del texto */
+}
+
+/* Estilo para el precio normal antes del descuento */
+.normal-price del {
+    color: #707070; /* Gris claro */
+    text-decoration: line-through; /* Tachado */
+}
+
+.subscription-form {
+    background-color: #28A745; /* Color de fondo verde */
+    padding: 20px; /* Espaciado interno para el formulario */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre los campos del formulario */
+}
+
+.form-control {
+    display: block; /* Asegura que los controles del formulario sean de bloque */
+    width: 100%; /* Ajusta el ancho al contenedor */
+    padding: 0.375rem 0.75rem; /* Padding estándar para Bootstrap */
+    line-height: 1.5; /* Altura de línea para el texto dentro del formulario */
+    background-color: #fff; /* Fondo blanco para los campos de entrada */
+    border: 1px solid #ced4da; /* Borde sutil para los campos */
+}
+
+.btn-primary {
+    color: #fff; /* Texto blanco */
+    background-color: #28A745; /* Fondo verde */
+    border-color: #28A745; /* Borde del mismo color que el fondo */
+}
+
+.btn-primary:hover {
+    background-color: #1e7e34; /* Un verde más oscuro al pasar el ratón */
+    border-color: #1c7430; /* Borde de un verde más oscuro */
+}
+
+.btn-container {
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+.navbar-brand {
+    position: relative; /* Establece como referencia para el logo absoluto */
+    overflow: visible; /* Permite que los hijos se salgan visualmente */
+    height: 50px; /* Altura fija para el header */
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+.logo {
+    position: absolute; /* Posiciona el logo de forma absoluta dentro del navbar-brand */
+    top: 50%; /* Centra el logo verticalmente */
+    transform: translateY(-50%); /* Alinea centrado con respecto a la parte superior del navbar-brand */
+    height: 300px; /* Altura deseada del logo */
+    width: auto; /* Mantiene la proporción del logo */
+}
+
+.footer {
+    background-color: #ffffff; /* Color de fondo del footer */
+    color: #707070; /* Color del texto */
+    padding: -60px 0; /* Espaciado vertical uniforme */
+    text-align: center; /* Centrado horizontal del contenido del footer */
+    font-size: 12px; /* Ajusta el tamaño del texto a 12px */
+}
+
+.footer-logo {
+    height: 200px; /* Altura fija del logo */
+    width: auto; /* Ancho automático para mantener la proporción */
+    margin-bottom: -80px; /* Espacio debajo del logo */
+}
+
+.container.text-center {
+    text-align: center; /* Centrado horizontal del contenido del footer */
+}
